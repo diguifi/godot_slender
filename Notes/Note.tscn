@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Notes/Note.gd" type="Script" id=1]
+
+[node name="Note" type="Sprite3D"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0 )
+transparent = false
+shaded = true
+script = ExtResource( 1 )

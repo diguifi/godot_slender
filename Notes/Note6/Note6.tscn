@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Notes/Note.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Notes/Note6/note6.jpg" type="Texture" id=2]
+
+[node name="Note6" type="Spatial"]
+
+[node name="Note" parent="." instance=ExtResource( 1 )]
+texture = ExtResource( 2 )
+note_id = 1
