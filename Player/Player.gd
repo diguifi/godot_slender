@@ -17,11 +17,12 @@ var sprint_enabled := true
 var sprinting := false
 var tired := false
 var current_sprinting_time = 0
+export(bool) var gets_tired = true
 export(float) var max_sprinting_time = 5.0
 # Walk
 const FLOOR_MAX_ANGLE: float = deg2rad(46.0)
 export(float) var gravity = 30.0
-export(int) var walk_speed = 35
+export(int) var walk_speed = 5
 export(int) var sprint_speed = 7
 export(int) var acceleration = 2
 export(int) var deacceleration = 5
@@ -172,24 +173,24 @@ func sprint(delta: float) -> void:
 	check_tired(delta)
 
 func check_tired(delta: float) -> void:
-	if max_sprinting_time > 0:
-		if can_sprint():
-			current_sprinting_time += delta
-			if current_sprinting_time >= max_sprinting_time:
-				tired = true
-			
-		else:
-			current_sprinting_time -= delta
-			if current_sprinting_time <= 0:
-				tired = false
-				current_sprinting_time = 0
+	if gets_tired:
+		if max_sprinting_time > 0:
+			if can_sprint():
+				current_sprinting_time += delta
+				if current_sprinting_time >= max_sprinting_time:
+					tired = true
+			else:
+				current_sprinting_time -= delta
+				if current_sprinting_time <= 0:
+					tired = false
+					current_sprinting_time = 0
 
 func can_sprint() -> bool:
 	return (sprint_enabled and
 		is_on_floor() and
 		_is_sprinting_input and
 		move_axis.x >= 0.5 and
-		!tired) 
+		!tired)
 
 func _got_note():
 	total_notes += 1

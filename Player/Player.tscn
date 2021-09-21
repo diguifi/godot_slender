@@ -26,4 +26,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.408567, -0.619318 )
 light_energy = 2.0
 light_indirect_energy = 5.0
 spot_range = 20.0
-spot_angle = 40.0
+spot_angle = 50.0

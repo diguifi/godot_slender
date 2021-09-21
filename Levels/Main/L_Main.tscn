@@ -404,35 +404,3 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -77.8939, 2.75618, -10.2431 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
 environment = ExtResource( 3 )
-
-[node name="DirectionalLight" type="DirectionalLight" parent="Lighting"]
-transform = Transform( -0.866026, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 46.1919, 0 )
-light_color = Color( 0.301961, 0.301961, 0.301961, 1 )
-light_energy = 0.5
-light_indirect_energy = 0.5
-shadow_enabled = true
-shadow_bias = 0.05
-directional_shadow_max_distance = 250.0
-
-[node name="LightingTest" type="Node" parent="."]
-
-[node name="DirectionalLightTests" type="DirectionalLight" parent="LightingTest"]
-transform = Transform( -0.866026, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 46.1919, -76.2558 )
-visible = false
-shadow_enabled = true
-shadow_bias = 0.05
-directional_shadow_max_distance = 250.0
-
-[node name="DirectionalLightTests2" type="DirectionalLight" parent="LightingTest"]
-transform = Transform( -0.866026, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 46.1919, 70.3352 )
-visible = false
-shadow_enabled = true
-shadow_bias = 0.05
-directional_shadow_max_distance = 250.0
-
-[node name="DirectionalLightTests3" type="DirectionalLight" parent="LightingTest"]
-transform = Transform( -0.866026, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 98.0354, 46.1919, -0.232147 )
-visible = false
-shadow_enabled = true
-shadow_bias = 0.05
-directional_shadow_max_distance = 250.0

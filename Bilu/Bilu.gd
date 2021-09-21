@@ -9,7 +9,7 @@ enum state {
 
 onready var player = get_node("/root/L_Main/Player")
 onready var camera = get_viewport().get_camera()
-export var time_for_new_action = 10
+export var time_for_new_action = 16
 
 var current_state = state.HAUNTING
 var last_state = state.NONE
@@ -99,10 +99,12 @@ func calculate_new_action():
 	should_stand_still = false
 	should_jumpscare = false
 	random_generator.randomize()
-	var random_value = random_generator.randi_range(1,100)
-	if stand_still_chance >= random_value:
+	var random_value_stand = random_generator.randi_range(1,100)
+	random_generator.randomize()
+	var random_value_scare = random_generator.randi_range(1,100)
+	if stand_still_chance >= random_value_stand:
 		should_stand_still = true
-	elif jumpscare_chance  >= random_value:
+	elif jumpscare_chance  >= random_value_scare:
 		should_jumpscare = true
 		
 func set_state():
@@ -133,9 +135,11 @@ func apply_state_properties():
 			pass
 			
 func recalculate_bilu_variables(player_notes):
-	current_distance = 15
-	jumpscare_chance = 10
-	stand_still_chance = 20
+	if player_notes > 0:
+		time_for_new_action = 16 - player_notes
+		current_distance = 15 / player_notes
+		jumpscare_chance = 10 + (player_notes * 4)
+		stand_still_chance = 20 + (player_notes * 5)
 
 func _on_VisibilityNotifier_camera_entered(camera):
 	player_can_see = true
