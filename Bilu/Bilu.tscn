@@ -1,7 +1,27 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Bilu/bilu.png" type="Texture" id=1]
 [ext_resource path="res://Bilu/Bilu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sounds/Bilu/acende a luz.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Sounds/Bilu/agora conseguem ver bilu.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Sounds/Bilu/apnas que busquem conhecimento.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Sounds/Bilu/mais dois passos.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Sounds/Bilu/preparar para tocar bilu.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sounds/Bilu/bilu esta tentando se mostrar totalmente.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Sounds/Bilu/bilu quer objeto.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Sounds/Bilu/bilu espera na proxima vez.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Assets/Sounds/Bilu/em minha expressao, uma mensagem a todos.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Sounds/Bilu/bilu saira na estrada.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Assets/Sounds/Bilu/bilu quer ficar a dois metros.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Assets/Sounds/Bilu/eh soh manter a calma.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Sounds/Bilu/bilu saira na estrada 2.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Sounds/Bilu/eu entendo o pensamento.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Sounds/Bilu/nao, bilu quer da sua mao.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Sounds/Jumpscares/jumpscare.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Sounds/Jumpscares/piano1.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Sounds/Jumpscares/piano2.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Sounds/Jumpscares/piano4.mp3" type="AudioStream" id=21]
+[ext_resource path="res://Assets/Sounds/Jumpscares/piano3.mp3" type="AudioStream" id=22]
 
 [node name="Bilu" type="Spatial"]
 script = ExtResource( 2 )
@@ -13,6 +33,115 @@ texture = ExtResource( 1 )
 
 [node name="VisibilityNotifier" type="VisibilityNotifier" parent="."]
 transform = Transform( 0.8, 0, 0, 0, 1.5, 0, 0, 0, 0.2, 0, 1.63586, 0 )
+
+[node name="BiluLines" type="Spatial" parent="."]
+
+[node name="AcendeALuz" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.554 )
+stream = ExtResource( 3 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="ConseguemVer" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 4 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="Busquem" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 5 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluEspera" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 10 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluTentando" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 8 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluQuerFicar" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 13 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluQuerObjeto" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 9 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluSairaNaEstrada" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 12 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluSairaNaEstrada2" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 15 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="ManterACalma" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 14 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="EmMinhaExpressao" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 11 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="EuEntendo" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 16 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="DoisPassos" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 6 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="SuaMao" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 17 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="PrepararParaTocar" type="AudioStreamPlayer3D" parent="BiluLines"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.543975 )
+stream = ExtResource( 7 )
+unit_db = 6.0
+max_db = 6.0
+
+[node name="BiluTerrors" type="Spatial" parent="."]
+
+[node name="Piano1" type="AudioStreamPlayer" parent="BiluTerrors"]
+stream = ExtResource( 19 )
+
+[node name="Piano2" type="AudioStreamPlayer" parent="BiluTerrors"]
+stream = ExtResource( 20 )
+
+[node name="Piano3" type="AudioStreamPlayer" parent="BiluTerrors"]
+stream = ExtResource( 22 )
+
+[node name="Piano4" type="AudioStreamPlayer" parent="BiluTerrors"]
+stream = ExtResource( 21 )
+
+[node name="Jumpscare" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
 
 [connection signal="camera_entered" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_camera_entered"]
 [connection signal="camera_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_camera_exited"]

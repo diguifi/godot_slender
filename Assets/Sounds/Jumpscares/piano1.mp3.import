@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/piano1.mp3-10440c34ebc2705318523b4b864f68bb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Jumpscares/piano1.mp3"
+dest_files=[ "res://.import/piano1.mp3-10440c34ebc2705318523b4b864f68bb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

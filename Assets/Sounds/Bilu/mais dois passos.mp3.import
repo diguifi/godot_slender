@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mais dois passos.mp3-4f71f3d3c24afa2614dd6f3cb53a6cc9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/mais dois passos.mp3"
+dest_files=[ "res://.import/mais dois passos.mp3-4f71f3d3c24afa2614dd6f3cb53a6cc9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

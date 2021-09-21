@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/em minha expressao, uma mensagem a todos.mp3-1a83d1e9221d3bba950513040b29567b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/em minha expressao, uma mensagem a todos.mp3"
+dest_files=[ "res://.import/em minha expressao, uma mensagem a todos.mp3-1a83d1e9221d3bba950513040b29567b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

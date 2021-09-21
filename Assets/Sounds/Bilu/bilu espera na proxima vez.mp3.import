@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bilu espera na proxima vez.mp3-afb0fb9515dfed5de03d7c8f5df7b062.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/bilu espera na proxima vez.mp3"
+dest_files=[ "res://.import/bilu espera na proxima vez.mp3-afb0fb9515dfed5de03d7c8f5df7b062.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

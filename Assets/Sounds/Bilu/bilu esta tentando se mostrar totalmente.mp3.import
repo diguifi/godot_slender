@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bilu esta tentando se mostrar totalmente.mp3-af0ca317208ccc6777f742cbaf354017.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/bilu esta tentando se mostrar totalmente.mp3"
+dest_files=[ "res://.import/bilu esta tentando se mostrar totalmente.mp3-af0ca317208ccc6777f742cbaf354017.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

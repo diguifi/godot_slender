@@ -1,8 +1,10 @@
 extends Spatial
 
 export var fast_close := true
+onready var terror_audio = $TerrorBeatsAudio
 
 func _ready() -> void:
+	Signals.connect("got_note", self, "_got_note")
 	if !OS.is_debug_build():
 		fast_close = false
 	
@@ -25,3 +27,7 @@ func toggle_mouse_mode():
 				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			Input.MOUSE_MODE_VISIBLE:
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+				
+func _got_note():
+	if !terror_audio.playing:
+		terror_audio.play()

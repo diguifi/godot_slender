@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/preparar para tocar bilu.mp3-1c133ace9525822989558a3bcc3e3cd8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/preparar para tocar bilu.mp3"
+dest_files=[ "res://.import/preparar para tocar bilu.mp3-1c133ace9525822989558a3bcc3e3cd8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

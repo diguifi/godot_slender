@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/piano_background.mp3-dde276f21e6a6e9e1e0518e9c78cd675.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Background/Ambiance/piano_background.mp3"
+dest_files=[ "res://.import/piano_background.mp3-dde276f21e6a6e9e1e0518e9c78cd675.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

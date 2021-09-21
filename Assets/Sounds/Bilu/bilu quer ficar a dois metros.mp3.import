@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bilu quer ficar a dois metros.mp3-2fd6077ef6c80c5bea1126d6b5317d25.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/bilu quer ficar a dois metros.mp3"
+dest_files=[ "res://.import/bilu quer ficar a dois metros.mp3-2fd6077ef6c80c5bea1126d6b5317d25.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

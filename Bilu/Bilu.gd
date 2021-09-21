@@ -9,6 +9,9 @@ enum state {
 
 onready var player = get_node("/root/L_Main/Player")
 onready var camera = get_viewport().get_camera()
+onready var bilu_lines = $BiluLines
+onready var bilu_terrors = $BiluTerrors
+onready var jumpscare_audio = $Jumpscare
 export var time_for_new_action = 16
 
 var current_state = state.HAUNTING
@@ -30,9 +33,6 @@ var should_stand_still := false
 var timer = 0
 var jumpscare_time = 1.5
 var random_generator = RandomNumberGenerator.new()
-
-func _ready():
-	Signals.connect("got_note", self, "_got_note")
 
 func _process(delta):
 	timer += delta
@@ -86,6 +86,7 @@ func stand_still():
 	if !last_player_can_see and player_can_see and !can_disapear_after_being_seen:
 		count_player_looking = true
 		can_disapear_after_being_seen = true
+		play_random_sound(bilu_terrors)
 	if last_player_can_see and !player_can_see and can_disapear_after_being_seen:
 		count_player_looking = false
 		can_disapear_after_being_seen = false
@@ -127,19 +128,29 @@ func set_state():
 func apply_state_properties():
 	match current_state:
 		state.JUMPSCARING:
-			pass
+			jumpscare_audio.play()
+			play_random_sound(bilu_lines)
 		state.STANDING:
 			time_player_sees = 0
 			count_player_looking = false
+			play_random_sound(bilu_lines)
 		state.HAUNTING:
 			pass
 			
 func recalculate_bilu_variables(player_notes):
 	if player_notes > 0:
-		time_for_new_action = 16 - player_notes
+		time_for_new_action = 20 - player_notes
 		current_distance = 15 / player_notes
-		jumpscare_chance = 10 + (player_notes * 4)
+		jumpscare_chance = 10 + (player_notes * 3)
 		stand_still_chance = 20 + (player_notes * 5)
+		
+func play_random_sound(parent_node):
+	var total_sounds = parent_node.get_children().size()
+	random_generator.randomize()
+	var random_val = random_generator.randi_range(0, total_sounds-3)
+	var selected_sound = parent_node.get_child(random_val)
+	if !selected_sound.playing:
+		selected_sound.play()
 
 func _on_VisibilityNotifier_camera_entered(camera):
 	player_can_see = true

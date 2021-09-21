@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sounds/Player/footsteps.mp3" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Sounds/Player/sprintsteps.mp3" type="AudioStream" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -27,3 +29,13 @@ light_energy = 2.0
 light_indirect_energy = 5.0
 spot_range = 20.0
 spot_angle = 50.0
+
+[node name="SteapsAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -8.0
+bus = "Sfx"
+
+[node name="SteapsSprintAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -8.0
+bus = "Sfx"

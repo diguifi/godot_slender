@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nao, bilu quer da sua mao.mp3-ac6beaa4dc33155e786e66116bc9bafb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/nao, bilu quer da sua mao.mp3"
+dest_files=[ "res://.import/nao, bilu quer da sua mao.mp3-ac6beaa4dc33155e786e66116bc9bafb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

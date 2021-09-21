@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/acende a luz.mp3-4425016b49096f516df732ae4b5f734f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/acende a luz.mp3"
+dest_files=[ "res://.import/acende a luz.mp3-4425016b49096f516df732ae4b5f734f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

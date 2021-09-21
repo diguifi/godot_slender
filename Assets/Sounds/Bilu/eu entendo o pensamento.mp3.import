@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/eu entendo o pensamento.mp3-25961c5edc352d75161a7df73171fbb6.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/eu entendo o pensamento.mp3"
+dest_files=[ "res://.import/eu entendo o pensamento.mp3-25961c5edc352d75161a7df73171fbb6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

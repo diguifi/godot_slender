@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/agora conseguem ver bilu.mp3-32cd1e6abf28f09b0a7a0ec6cb2cabcd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/agora conseguem ver bilu.mp3"
+dest_files=[ "res://.import/agora conseguem ver bilu.mp3-32cd1e6abf28f09b0a7a0ec6cb2cabcd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

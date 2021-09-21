@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bilu saira na estrada.mp3-e9a2dce572bec49f24cf80435e236062.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/bilu saira na estrada.mp3"
+dest_files=[ "res://.import/bilu saira na estrada.mp3-e9a2dce572bec49f24cf80435e236062.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

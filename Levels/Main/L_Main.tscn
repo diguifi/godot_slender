@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Main/Geometry/Floor.tscn" type="PackedScene" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://Notes/Note2/Note2.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Notes/Note3/Note3.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Notes/Note4/Note4.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Assets/Sounds/Background/Ambiance/forest_ambiance_2.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Sounds/Background/Ambiance/background_beats.mp3" type="AudioStream" id=23]
 
 [node name="L_Main" type="Spatial"]
 script = ExtResource( 4 )
@@ -404,3 +406,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -77.8939, 2.75618, -10.2431 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
 environment = ExtResource( 3 )
+
+[node name="AmbianceAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+volume_db = -10.0
+autoplay = true
+
+[node name="TerrorBeatsAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+volume_db = -10.0

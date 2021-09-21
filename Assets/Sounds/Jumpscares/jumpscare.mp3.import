@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jumpscare.mp3-3a1971ddedcf20f4130f0435008bac86.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Jumpscares/jumpscare.mp3"
+dest_files=[ "res://.import/jumpscare.mp3-3a1971ddedcf20f4130f0435008bac86.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

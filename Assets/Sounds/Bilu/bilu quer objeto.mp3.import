@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bilu quer objeto.mp3-9ba4c52670d680a0f36e42f99064296e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Bilu/bilu quer objeto.mp3"
+dest_files=[ "res://.import/bilu quer objeto.mp3-9ba4c52670d680a0f36e42f99064296e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

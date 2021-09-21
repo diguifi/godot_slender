@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/background_beats.mp3-bf39f36f42760d1eb48497a5f29d1836.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Background/Ambiance/background_beats.mp3"
+dest_files=[ "res://.import/background_beats.mp3-bf39f36f42760d1eb48497a5f29d1836.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

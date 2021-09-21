@@ -19,6 +19,8 @@ var tired := false
 var current_sprinting_time = 0
 export(bool) var gets_tired = true
 export(float) var max_sprinting_time = 5.0
+onready var steps_audio = $SteapsAudio
+onready var sprint_audio = $SteapsSprintAudio
 # Walk
 const FLOOR_MAX_ANGLE: float = deg2rad(46.0)
 export(float) var gravity = 30.0
@@ -124,6 +126,8 @@ func direction_input() -> void:
 
 func accelerate(delta: float) -> void:
 	# Where would the player go
+	play_movement_sfx()
+		
 	var _temp_vel: Vector3 = velocity
 	var _temp_accel: float
 	var _target: Vector3 = direction * _speed
@@ -152,6 +156,20 @@ func accelerate(delta: float) -> void:
 		if abs(velocity.z) < _vel_clamp:
 			velocity.z = 0
 
+func play_movement_sfx():
+	var is_moving = direction.x != 0 || direction.y != 0
+	var is_sprinting = is_moving and can_sprint()
+	if is_moving and !is_sprinting:
+		if !steps_audio.playing:
+			steps_audio.play()
+	else:
+		steps_audio.stop()
+		
+	if is_sprinting:
+		if !sprint_audio.playing:
+			sprint_audio.play()
+	else:
+		sprint_audio.stop()
 
 func jump() -> void:
 	if _is_jumping_input:
