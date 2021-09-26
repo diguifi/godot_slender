@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sounds/Player/footsteps.mp3" type="AudioStream" id=2]
@@ -7,10 +7,14 @@
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
 
+[sub_resource type="BoxShape" id=2]
+
 [node name="Player" type="KinematicBody"]
 collision_layer = 2
 collision_mask = 3
 script = ExtResource( 1 )
+mouse_sensitivity = 18.0
+gravity = 20.0
 
 [node name="Collision" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
@@ -33,9 +37,12 @@ spot_angle = 50.0
 [node name="SteapsAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
 volume_db = -8.0
-bus = "Sfx"
 
 [node name="SteapsSprintAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -8.0
-bus = "Sfx"
+
+[node name="PlayerArea" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="PlayerArea"]
+shape = SubResource( 2 )

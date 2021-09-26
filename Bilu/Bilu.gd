@@ -143,6 +143,7 @@ func recalculate_bilu_variables(player_notes):
 		current_distance = 15 / player_notes
 		jumpscare_chance = 10 + (player_notes * 3)
 		stand_still_chance = 20 + (player_notes * 5)
+		max_time_player_sees = 6 - (player_notes/3)
 		
 func play_random_sound(parent_node):
 	var total_sounds = parent_node.get_children().size()

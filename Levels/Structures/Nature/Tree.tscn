@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Levels/Main/Geometry/Cube.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Levels/Structures/Nature/leaves1.png" type="Texture" id=2]
+[ext_resource path="res://Levels/Structures/Nature/leaves1_low.png" type="Texture" id=2]
 [ext_resource path="res://Levels/Structures/Nature/TreeMatterial.tres" type="Material" id=3]
 
 [node name="Tree" type="Spatial"]

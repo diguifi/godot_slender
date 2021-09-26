@@ -6,7 +6,7 @@
 [node name="Containers" type="Spatial"]
 
 [node name="Cube" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, 10, 2.2, 5 )
+transform = Transform( 1.99366, 0, 0.477227, 0, 2, 0, -0.159076, 0, 5.98099, 10, 1.92024, 5 )
 material/0 = ExtResource( 2 )
 
 [node name="Cube2" parent="." instance=ExtResource( 1 )]
@@ -14,15 +14,15 @@ transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, 0, 2.2, 5 )
 material/0 = ExtResource( 2 )
 
 [node name="Cube3" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, -10, 2.2, 5 )
+transform = Transform( 1.98098, 0, 0.825497, 0, 2, 0, -0.275166, 0, 5.94294, -10, 2.2, 5 )
 material/0 = ExtResource( 2 )
 
 [node name="Cube4" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, 10, 2.2, -10 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, 10, 1.29031, -10 )
 material/0 = ExtResource( 2 )
 
 [node name="Cube5" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, 0, 2.2, -10 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 6, 0, 1.3274, -10 )
 material/0 = ExtResource( 2 )
 
 [node name="Cube6" parent="." instance=ExtResource( 1 )]

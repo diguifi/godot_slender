@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/farts.mp3-5c6a425716b4061760cdf2cf6fcf9f82.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Background/farts.mp3"
+dest_files=[ "res://.import/farts.mp3-5c6a425716b4061760cdf2cf6fcf9f82.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

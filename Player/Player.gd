@@ -69,7 +69,6 @@ func walk(delta: float) -> void:
 	
 	if is_on_floor():
 		snap = -get_floor_normal() - get_floor_velocity() * delta
-		
 		# Workaround for sliding down after jump on slope
 		if velocity.y < 0:
 			velocity.y = 0
@@ -81,7 +80,6 @@ func walk(delta: float) -> void:
 			velocity.y = 0
 		
 		snap = Vector3.ZERO
-		
 		velocity.y -= gravity * delta
 	
 	sprint(delta)
@@ -159,7 +157,7 @@ func accelerate(delta: float) -> void:
 func play_movement_sfx():
 	var is_moving = direction.x != 0 || direction.y != 0
 	var is_sprinting = is_moving and can_sprint()
-	if is_moving and !is_sprinting:
+	if is_moving:
 		if !steps_audio.playing:
 			steps_audio.play()
 	else:
@@ -213,4 +211,4 @@ func can_sprint() -> bool:
 func _got_note():
 	total_notes += 1
 	if total_notes == 8:
-		get_tree().change_scene("res://Levels/Menus/Victory.tscn")
+		Signals.emit_signal("enable_spaceship")
